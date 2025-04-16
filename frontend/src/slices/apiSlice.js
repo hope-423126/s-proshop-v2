@@ -12,6 +12,7 @@ const baseQuery = fetchBaseQuery({
   baseUrl: BASE_URL,
 });
 
+//request to the base url and check the status
 async function baseQueryWithAuth(args, api, extra) {
   const result = await baseQuery(args, api, extra);
   // Dispatch the logout action on 401.
