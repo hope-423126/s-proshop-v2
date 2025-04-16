@@ -1,6 +1,7 @@
 import { apiSlice } from './apiSlice';
 import { ORDERS_URL, PAYPAL_URL } from '../constants';
 
+//injectEndpoints is a powerful method from the RTK query that allows you to dynamically add endpoints to an existing apiSlice
 export const orderApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     createOrder: builder.mutation({
